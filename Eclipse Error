@@ -1,0 +1,24 @@
+1. 
+An error has occurred. See error log for more details.
+[파일경로]
+
+// https://hongpal.tistory.com/entry/Eclipse-An-error-has-occurred-See-the-log-file-%EB%8C%80%EC%B2%98%EB%B2%95 에서 찾은 에러해결방법
+
+해결방법
+- Eclipse 실행시 -clean 옵션으로 실행하기 : cmd 에서 c:\eclipse\eclipse.exe -clean 실행 ( 효과X )
+- workspace/.metadata/.plugins/org.eclipse.core.resources/.saps 파일 삭제 ( 효과X )
+- workspace/.metadata/.plugins/org.eclipse.workbench/workbench.xml 파일 삭제 ( 효과O - 파일은 정상종료시 다시 생성됨 )
+
+
+
+2.
+이클립스에서 js 파일 등을 열려고하면
+
+Could not find node.js.
+This will result in editors missing key features.
+Please make sure node.js is installed and that your PATH enviroment variable contains the locationt to te 'node' executable.
+
+이라는 오류가 발생했다.
+
+// https://stackoverflow.com/questions/63518766/error-could-not-find-node-js-in-eclipse 에서 찾은 에러 해결 방법
+
