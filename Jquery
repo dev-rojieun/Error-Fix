@@ -1,0 +1,12 @@
+1. 구버전과 신버전을 이어주는 jQuery-migrate
+
+<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+
+위와 같이사용하며,
+jQuery 1.9 버전 이전에 작성된 코드와 이후에 작성된 코드간의 호환성 문제로 사용한다.
+구형 jQuery로 작성된 페이지에 최신버전의 jQuery를 필요로 하는 Plugin이나 script 를 쓴다면 이를 활용해보자
+
+// https://webdir.tistory.com/468
+
+
