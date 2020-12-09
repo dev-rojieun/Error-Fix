@@ -1,0 +1,20 @@
+1. JSPF 파일은 도대체 뭘까?
+Java Server Page Fragment : Jsp의 일부를 다른 JSP 에 포함하도록 만들어진 파일이다.
+
+☝ jsp 파일에서 include
+<%@ include file="파일위치" %>
+
+✌ web.xml 에서 특정 패턴의 jps 에만 include 되도록 하는 방법
+<jsp-config>                                                // jsp 에 관련된 여러가지 설정을 위한 태그                            
+     <jsp-property-group>                                   // 하나의 설정을 지정하기 위한 태그그룹 (여러개 지정시 이 부분 반복)
+           <url-pattern>*.jsp</url-pattern>                 // 설정을 적용할 대상을 패턴으로 지정 ( *.jsp 로 지정시 모든 jsp 파일에 적용 )
+           <include-prelude>/ready.jspf</include-prelude>   // 패턴에 해당하는 JSP 파일의 맨 앞부분에 include 
+           <include-coda>/end.jspf</include-coda>           // 패턴에 해당하는 JSP 파일의 맨 끝부분에 include 
+     </jsp-property-group> 
+</jsp-config> 
+
+
+// 출처 : https://dololak.tistory.com/514
+
+
+
