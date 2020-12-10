@@ -1,0 +1,21 @@
+@SuppressWarnings
+
+이건 컴파일러가 일반적으로 경고하는 내용 중 "이건 하지마"하고 제외시킬 때 쓰입니다.
+따라서 어떤 경고를 제외시킬지 옵션을 줄 수 있어요.
+
+몇 가지 정리해보면
+
+1. all : 모든 경고를 억제
+2. cast : 캐스트 연산자 관련 경고 억제
+3. dep-ann : 사용하지 말아야 할 주석 관련 경고 억제
+4. deprecation : 사용하지 말아야 할 메소드 관련 경고 억제
+5. fallthrough : switch문에서의 break 누락 관련 경고 억제
+6. finally : 반환하지 않는 finally 블럭 관련 경고 억제
+7. null : null 분석 관련 경고 억제
+8. rawtypes : 제네릭을 사용하는 클래스 매개 변수가 불특정일 때의 경고 억제
+9. unchecked : 검증되지 않은 연산자 관련 경고 억제
+10. unused : 사용하지 않는 코드 관련 경고 억제
+
+이 외에도 hiding, incomplete-switch, nls, restriction, serial, static-access 등의 옵션이 있어요.
+
+// 출처: https://jinwoonote.tistory.com/entry/SuppressWarnings-이건-뭐지 [노트]
